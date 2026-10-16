@@ -17,10 +17,10 @@
 **DL_project_traffic_signs** est un projet de Deep learning axé sur la reconnaissance automatique de panneaux de signalisation routière. Le projet s'appuie sur le jeu de données de référence **GTSRB (German Traffic Sign Recognition Benchmark)**, composé de plus de 51 800 images réelles réparties en 43 classes différentes (limitations de vitesse, interdictions, obligations, etc.).
 
 Il suit une progression étape par étape :
-1. **Classification multiclasse** sur des panneaux déjà découpés et extraits (Réseau Dense / MLP vs CNN)[cite: 2, 3, 8].
+1. **Classification multiclasse** sur des panneaux déjà découpés et extraits
 2. **Expérimentations et optimisations** pour maximiser les performances.
-3. **Détection d'objets dans une scène complète (YOLO)** pour localiser et classifier dynamiquement plusieurs panneaux (Bounding boxes + scores de confiance)[cite: 3, 8, 9].
-4. **Extension vidéo** pour valider la chaîne de traitement sur des séquences routières[cite: 3, 9].
+3. **Détection d'objets dans une scène complète (YOLO)** pour localiser et classifier dynamiquement plusieurs panneaux (Bounding boxes + scores de confiance)
+4. **Extension vidéo** pour valider la chaîne de traitement sur des séquences routières
 
 Chaque historique et modèle est sauvegardé afin d'éviter à relancer l'entièreté du notebook.
 
