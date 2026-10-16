@@ -16,10 +16,14 @@
 
 **DL_project_traffic_signs** est un projet de Deep learning axé sur la reconnaissance automatique de panneaux de signalisation routière. Le projet s'appuie sur le jeu de données de référence **GTSRB (German Traffic Sign Recognition Benchmark)**, composé de plus de 51 800 images réelles réparties en 43 classes différentes (limitations de vitesse, interdictions, obligations, etc.).
 
-Ce notebook couvre l'ensemble du workflow d'analyse exploratoire, de prétraitement et de préparation des données visuelles avant la phase d'entraînement.
+Il suit une progression étape par étape :
+1. **Classification multiclasse** sur des panneaux déjà découpés et extraits (Réseau Dense / MLP vs CNN)[cite: 2, 3, 8].
+2. **Expérimentations et optimisations** pour maximiser les performances.
+3. **Détection d'objets dans une scène complète (YOLO)** pour localiser et classifier dynamiquement plusieurs panneaux (Bounding boxes + scores de confiance)[cite: 3, 8, 9].
+4. **Extension vidéo** pour valider la chaîne de traitement sur des séquences routières[cite: 3, 9].
 
 Chaque historique et modèle est sauvegardé afin d'éviter à relancer l'entièreté du notebook.
----
+
 
 ## Arborescence du projet
 
@@ -29,11 +33,11 @@ DL_project_traffic_signs/
 ├── README.md
 ├── DL_project_traffic_signs.ipynb  # Notebook principal
 ├── data
-    ├── images/                       # Images de test pour YOLO
-    └── videos/                       # Vidéos de test et de résultats pour YOLO
+    ├── images/                     # Images de test pour YOLO
+    └── videos/                     # Vidéos de test et de résultats pour YOLO
 ├── saves
-    ├── history/                      # Sauvegardes des historiques
-    └── models/                       # Sauvegardes des modèles
+    ├── history/                    # Sauvegardes des historiques
+    └── models/                     # Sauvegardes des modèles
 └── gtsrb-german-traffic-sign/      # Dataset téléchargé via Kaggle
     ├── Meta/                       # Images de référence / icônes par classe (.png)
     ├── Train/                      # 39 209 images d'entraînement réparties par dossiers de classe (0 à 42)
